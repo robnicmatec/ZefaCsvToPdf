@@ -4,10 +4,12 @@ import datetime
 
 # install and provide path of executable https://wkhtmltopdf.org/downloads.html
 wkhtmltopdf_path = 'C:/Program Files/wkhtmltopdf/bin'
-your_name = ""
+
+your_name = "Christ_Robin" #change
 last_month = (datetime.date.today().replace(day=1) - datetime.timedelta(days=1)).strftime("%Y-%m")
+
 csv_path = "./november.csv" #change to your file name
-pdf_path = f"{your_name}_Zefa_{last_month}.pdf"
+pdf_path = f"Monatsliste_ZEFA_{your_name}_{last_month}.pdf"
 options = {    'page-size': 'A4',
     'orientation':'Landscape',
     'encoding': 'UTF-8',
